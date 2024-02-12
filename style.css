@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+}
+
+header h1 {
+    color: #f0f0f0;
+    margin-left: 3rem;
+}
+
+header {
+    background: linear-gradient(to right, #ff66b2, #ffccff); /* ピンクのグラデーション */
+    color: rgb(247, 193, 69);
+    padding: 10px;
+}
+
+nav {
+    background: linear-gradient(to right, #ff66b2, #ffccff); /* ピンクのグラデーション */
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+/* Navigation メニューの ul スタイル */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Navigation メニューの li スタイル */
+nav li {
+    margin: 0 10px;
+    position: relative;
+}
+
+/* Navigation メニューの a スタイル */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* ホバー時の Navigation メニューの a スタイル */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* ホバー時の Navigation メニューの li::before スタイル (アンダーライン) */
+nav li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+/* ホバー時の Navigation メニューの li:hover::before スタイル (アンダーライン表示) */
+nav li:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* 追加したセクションのスタイル */
+#profile {
+    margin-top: 8rem;
+    background-color: #f0f0f0; /* 薄いグレーの背景色 */
+    text-align: center;
+}
+
+
+/* プロフィールコンテンツのスタイル */
+.profile-content {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff66b2;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 40% 0%, 20% 100%, 0% 100%);
+  
+    z-index: 0;
+}
+
+/* アンダーライン付きの要素のスタイル */
+h1, h2 {
+    position: relative;
+  padding: 0.1em 0.5em;
+  background: -webkit-linear-gradient(to right, rgb(255, 186, 115), transparent);
+  background: linear-gradient(to right, rgb(255, 186, 115), transparent);
+  color: #545454;
+    border-bottom: 1px solid #e1d9d9;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.profile-content img {
+    border-radius: 50%;
+    width: 30%;
+    height: 10%;
+    z-index: 0;
+}
+
+
+/* プロフィールテキストのスタイル */
+.profile-text {
+    margin-left: 40px; /* 画像との間隔 */
+    max-width: 800px; /* テキストの最大幅 */
+}
+
+/* プロフィールセクション内の段落のスタイル */
+p {
+    font-size: 1rem; /* テキストのフォントサイズ */
+    line-height: 1.5; /* テキストの行間 */
+}
+
+
+
+
+
+
+/* 最近の出来事セクションのスタイル */
+#recent-events {
+    margin-top: 5rem;
+   text-align: center;
+    
+}
+
+#recent-events h2 {
+    text-align: right; /* h2を右寄せ */
+    margin-bottom: 10px; /* 必要に応じて余白を調整 */
+}
+
+/* 日付のスタイルを指定 */
+.recent-event-date {
+    text-align: center; /* 日付を右寄せ */
+    margin-bottom: 5px; /* 必要に応じて余白を調整 */
+}
+
+.blog-section {
+    margin-top: 5rem;
+    text-align: center;
+    position: relative;
+}
+
+.blog-container {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    position: relative; /* 追加 */
+    z-index: 1; /* 追加 */
+}
+
+.blog-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff66b2;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 20% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.blog-image {
+    border-radius: 5px;
+    margin-right: 40px; /* 画像とコンテンツの間隔 */
+}
+
+.blog-image img {
+    border-radius: 5px;
+    width: 300px; /* 画像の幅 */
+    height: 300px;
+    margin-left: 6rem;
+}
+
+.blog-content {
+    margin-top: -8rem;
+    margin-left: 13rem;
+}
+
+.blog-content h2 {
+    margin-bottom: 10px; /* タイトルの下の余白を調整 */
+}
+
+
+/* イベントのスタイル */
+.event {
+    display: flex;
+    margin-top: 5rem;
+    background: linear-gradient(to right, #ff66b2, #ffccff);
+}
+
+/* イベント日付のスタイル */
+.event-date {
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 4rem; /* 適切な値に調整してください */
+}
+
+/* イベントコンテンツのスタイル */
+.event-content {
+    max-width: 600px;
+    margin-left: 30rem;
+}
+
+/* イベントタイトルのスタイル */
+h3 {
+    margin-bottom: 10px;
+}
+
+/* イベント説明のスタイル */
+p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Contact Form セクションのスタイル */
+#contact-form {
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    
+}
+
+
+
+/* フォームコンテナのスタイル */
+.contact-form-container {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* フォームラベルのスタイル */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* フォーム入力フィールドのスタイル */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* 送信ボタンのスタイル */
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer セクションのスタイル */
+footer {
+    background: linear-gradient(to right, #ff66b2, #ffccff); /* ピンクのグラデーション */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer コンテンツのスタイル */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SNS アイコンのスタイル */
+.sns-icons {
+    display: flex;
+}
+
+.sns-icon {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ホバー時の SNS アイコンのスタイル */
+.sns-icon:hover {
+    text-decoration: underline;
+}
+
+/* SNS アイコンのスタイル */
+.sns-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px; /* アイコン間のマージン */
+    width: 30px; /* アイコンの幅 */
+    height: 30px; /* アイコンの高さ */
+    display: inline-block;
+}
+
+/* インスタグラムのアイコン */
+.instagram-icon {
+    background: url('path/to/instagram-icon.png') center/cover no-repeat; /* 画像のパスを指定 */
+}
+
+/* ツイッターのアイコン */
+.twitter-icon {
+    background: url('path/to/twitter-icon.png') center/cover no-repeat; /* 画像のパスを指定 */
+}
+
+/* フェイスブックのアイコン */
+.facebook-icon {
+    background: url('path/to/facebook-icon.png') center/cover no-repeat; /* 画像のパスを指定 */
+}
+
+
+
+
+
+
+

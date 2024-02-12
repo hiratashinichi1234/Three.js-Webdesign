@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Webdesign</title>
+    <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" type="module"></script>
+</head>
+<body>
+
+    <!-- 1. Header -->
+    <header>
+        <h1>My Website</h1>
+
+
+    <!-- 2. Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#blog">ブログ</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+   </header>
+    <!-- 3. Main Section -->
+    <main>
+        <section id="three-container">
+            <!-- Your three.js scene will be displayed here -->
+        </section>
+    </main>
+
+   <!-- 4. プロフィール -->
+<section id="profile">
+    <h2>プロフィール</h2>
+    <div class="profile-content">
+        <img src="./image/image1.jpg" alt="your-profile-image">
+        <div class="profile-text">
+            <h2>自己紹介</h2> <!-- ここにアンダーラインが含まれます -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <!-- ここにさらにプロフィールの詳細な内容を追加 -->
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="blog-section">
+    <h2>ブログ</h2>
+    <!-- 中央配置のコンテナ -->
+    <div class="blog-container">
+        <!-- 左側の画像 -->
+        <div class="blog-image">
+            <img src="./image/image11.png" alt="image2">
+        </div>
+
+        <!-- 右側のコンテンツ -->
+        <div class="blog-content">
+           
+            <h2>桜の花と蝶が綺麗でした!</h2>
+
+            <!-- ブログの本文 -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum alias maiores voluptate, impedit magni ducimus aspernatur unde deserunt. Similique natus dolorum sunt maiores, expedita quidem quas, suscipit eum facere asperiores esse fugit eos reprehenderit vel? Non vel, dolor eveniet accusamus eum architecto magnam voluptates consequuntur ducimus nesciunt rem, obcaecati dolore.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- 5. 最近の出来事 -->
+<section id="recent-events">
+    <h2>最近の出来事</h2>
+    <div class="event">
+        <div class="event-date">2024年2月1日</div>
+        <div class="event-content">
+            <h3>お花見に行きました!</h3>
+            <p>待ちに待ったお花見についに行きました！天気も晴れていて昼には花びらと共に綺麗な蝶が舞っていてとても楽しかったです。</p>
+        </div>
+    </div>
+    <div class="event">
+        <div class="event-date">2024年2月1日</div>
+        <div class="event-content">
+            <h3>記念写真が完成しました。</h3>
+            <p>A山にお花見に行った際に皆んなで撮った写真が完成したそうです！</p>
+        </div>
+    </div>
+    <!-- 他のイベントを必要に応じて追加 -->
+</section>
+
+
+   <!-- 6. Contact Form -->
+<section id="contact-form">
+    <h2>お問い合わせ</h2>
+    <div class="contact-form-container">
+        <form action="#" method="post">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">本文:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">送信</button>
+        </form>
+    </div>
+</section>
+
+
+ <!-- 7. Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="sns-icons">
+            <!-- SNS アイコンを追加 -->
+            <a href="#" class="sns-icon fab fa-instagram" title="Instagram"></a>
+            <a href="#" class="sns-icon fab fa-twitter" title="Twitter"></a>
+            <a href="#" class="sns-icon fab fa-facebook" title="Facebook"></a>
+        </div>
+        <p>&copy; 2024 My Website</p>
+    </div>
+</footer>
+
+
+    <!-- Include your scripts at the end of the body -->
+
+</body>
+</html>
+
+    
+   
